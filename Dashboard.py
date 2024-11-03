@@ -16,7 +16,7 @@ df = pd.read_csv("Book2.csv", sep=';')
 c1, c2 = st.columns(2)
 with c1:
     st.write('Variasi Menu tiap Minggu')
-    st.bar_chart(df, x='Hari', y='Persentase Menu', color= 'Menu', horizontal = True)
+    #st.bar_chart(df, x='Hari', y='Persentase Menu', color= 'Menu', horizontal = True)
 
 with c2:
     st.write('Hasil Evaluasi Computer Vision')
