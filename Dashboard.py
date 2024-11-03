@@ -13,14 +13,13 @@ col3.metric("Variasi Menu", "5", "-30")
 
 # Membuat DataFrame
 df = pd.read_csv("Book2.csv", sep=';')
-with st.container(border=True):
-    c1, c2 = st.columns(2)
-    c1.write('Variasi Menu tiap Minggu')
-    c1.bar_chart(df, x='Hari', y='Persentase Menu', color= 'Menu', horizontal = True)
+c1, c2 = st.columns(2)
+c1.write('Variasi Menu tiap Minggu')
+c1.bar_chart(df, x='Hari', y='Persentase Menu', color= 'Menu', horizontal = True)
 
-    c2.write('Hasil Evaluasi Computer Vision')
-    source = pd.DataFrame({"Evaluasi": ['Porsi sedikit', 'Menu monoton', 'Bukan makanan bergizi', 'Sesuai'], "persentase": [10, 30, 10, 50]})
-    c2.bar_chart(source, x='Evaluasi', y='persentase', color='Evaluasi')
+c2.write('Hasil Evaluasi Computer Vision')
+source = pd.DataFrame({"Evaluasi": ['Porsi sedikit', 'Menu monoton', 'Bukan makanan bergizi', 'Sesuai'], "persentase": [10, 30, 10, 50]})
+c2.bar_chart(source, x='Evaluasi', y='persentase', color='Evaluasi')
 
 
 st.subheader('Executive Summary')
