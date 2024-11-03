@@ -59,7 +59,7 @@ if file_uploaded is not None:
 class_btn = st.button("Submit")
 
 if class_btn:
-    with st.spinner('Kerja.. Kerja.. Tipes..'):
+    with st.spinner('Loading...'):
             plt.imshow(image)
             plt.axis("off")
             predictions = predict(image)
