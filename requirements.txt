@@ -4,3 +4,4 @@ Pillow
 streamlit
 tensorflow
 plotly
+altair
