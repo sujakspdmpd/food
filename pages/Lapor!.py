@@ -33,7 +33,7 @@ from tensorflow.keras.models import *
 from tensorflow.keras import preprocessing
 from PIL import Image
 
-  
+st.write('catatan: model computer vision terlalu besar untuk diupload di github sehingga tidak bisa di demokan')
 def predict(image):
     classifier_model = "food_model.h5"
       
