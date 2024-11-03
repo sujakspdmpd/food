@@ -21,7 +21,7 @@ with c1:
 with c2:
     st.write('Hasil Evaluasi Computer Vision')
     source = pd.DataFrame({"Evaluasi": ['Porsi sedikit', 'Menu monoton', 'Bukan makanan bergizi', 'Sesuai'], "persentase": [10, 30, 10, 50]})
-    st.bar_chart(source, x='Evaluasi', y='persentase', color='Evaluasi')
+    #st.bar_chart(source, x='Evaluasi', y='persentase', color='Evaluasi')
 
 
 st.subheader('Executive Summary')
